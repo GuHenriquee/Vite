@@ -12,7 +12,7 @@ async function buscarEMostrarVideos() {
   try {
     const busca = await axios.get(urlVideos);
 
-    const videos = busca.data; /*tanto faz */
+    const videos = busca.data;
 
     videos.forEach((video) => {
       if (video.categoria == "") {
